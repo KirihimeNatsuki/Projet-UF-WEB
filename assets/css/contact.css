@@ -1,10 +1,39 @@
-.form-group {
+.contact {
+  background-image: url(../images/contact.jpg);
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+}
+
+#form-group {
   max-width: 500px;
   margin: auto;
   padding: 50px;
-  background-image: url(../images/wood1.jpg);
-  border: 10px solid #f2f2f2;
+  background-image: url(../images/wood3.jpg);
+  color: lightgray;
+  left: 735px;
+  position: fixed;
+  margin-top: 90px;
 }
+
+#title {
+  color: transparent;
+    background: linear-gradient(to left, #f77f03, #000000, #f77f03, #000000, #f77f03, #000000);
+  background-size: 1000px 100%;
+  animation: bg 40s linear infinite;
+  -webkit-background-clip: text;
+}
+
+@keyframes bg {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 10000px;
+  }
+}
+
 
 h1, h2, h3, h4, h5, h6, p {
   text-align: center;
@@ -12,4 +41,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 input, textarea {
   width: 100%;
+  color: lightgray;
+}
+
+#sub {
+  width: 100%;
+  height: 40px
+  color: lightgray;
+}
+
+body {
+  height: 100vh;
 }
