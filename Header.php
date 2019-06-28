@@ -17,6 +17,10 @@
                       </div>
                   </a>
               </li>
+              <div class="bandeau-text">
+                <h2 id="title">LEMARCHAND ENZO</h2>
+                <h4>Bienvenue dans mon antre</h4>
+              </div>
               <li>
                   <a href="blog.php">
                       <span class="ca-icon" id="heart"><img src="assets/images/blog.png" ></span>
@@ -37,7 +41,3 @@
               </li>
           </ul>
 <a class="burger"><a href="index.php"><img src="assets/image/tete.png" alt="logo du site (image de moi)"></a>
-<div class="bandeau-text">
-  <h2 id="title">LEMARCHAND ENZO</h2>
-  <h4>Bienvenue dans mon antre</h4>
-</div>

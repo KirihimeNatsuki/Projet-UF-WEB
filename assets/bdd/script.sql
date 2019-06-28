@@ -53,12 +53,13 @@ CREATE TABLE IF NOT EXISTS `experience` (
 
 CREATE TABLE IF NOT EXISTS `contact` (
   id_contact int NOT NULL AUTO_INCREMENT,
-  nom_envoyeur varchar(80) NOT NULL,
-  prenom_envoyeur varchar(80) NOT NULL,
-  email varchar(200) NOT NULL,
+  nom_envoyeur varchar(60) NOT NULL,
+  prenom_envoyeur varchar(40) NOT NULL,
+  sujet varchar(80) NOT NULL,
+  email varchar(100) NOT NULL,
   message varchar(800) NOT NULL,
   file BLOB,
-  PRIMARY KEY (`id_contact`)
+  PRIMARY KEY (id_contact)
 ) ENGINE=InnoDB;
 
 -- =================================================================

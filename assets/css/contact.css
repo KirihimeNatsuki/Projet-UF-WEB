@@ -12,9 +12,9 @@
   padding: 50px;
   background-image: url(../images/wood3.jpg);
   color: lightgray;
-  left: 735px;
-  position: fixed;
+  position: absolute;
   margin-top: 90px;
+  margin-left: 750px;
 }
 
 #title {

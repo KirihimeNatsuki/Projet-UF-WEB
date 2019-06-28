@@ -3,6 +3,7 @@
     margin: auto;
     width: max-content;
     padding-bottom: 200px;
+    display: flex;
 }
 .ca-menu li{
     width: 200px;
