@@ -1,35 +1,16 @@
 <!DOCTYPE html>
+<?php session_start();
+require_once('Back-end/connexion.php'); ?>
 <html lang="fr" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Welcome - Enzo</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-    <link rel="shortcut icon" href="logo.png">
-    <script src="cookies.js"></script>
+    <?php require_once('Head.php'); ?>
   </head>
   <body>
     <header>
-      <div id="bandeau-top">
-        <nav>
-          <div class="nav">
-            <ul class="nav navbar-nav">
-						   <li><a href="aboutme.php">A propos</a></li>
-						   <li><a href="blog.php">Blog</a></li>
-						   <li><a href="contact.php">Contact</a></li>
-					  </ul>
-          </div>
-        </nav>
-      </div>
-        <a class="burger"><a href="index.php"><img src="assets/image/tete.png" alt="logo du site (image de moi)"></a>
-        <div class="bandeau-text">
-          <h2>LEMARCHAND ENZO</h2>
-          <h4>Bienvenue dans mon antre</h4>
-        </div>
+        <?php include('Header.php'); //include('Back-end/form_contact.php');?>
     </header>
     <main>
-      <br/>
+      <br><br><br><br><br>
       <div class="presentation">
         <h3 align="center"><strong>Salut, moi c'est Enzo</strong></h3><br/>
         <p align="center" face="verdana" > Etudiant en informatique (Ingésup) basé à Aix-en-Provence, j'essai de me spécialiser dans le développement logiciel,
@@ -58,7 +39,8 @@
 
         </div>
         <div class="reseaux">
-          
+
         </div>
       </footer>
+      <script src="assets/js/script.js"></script>
   </html>

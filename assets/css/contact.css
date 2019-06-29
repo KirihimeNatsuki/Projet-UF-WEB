@@ -1,38 +1,25 @@
-.contact {
+body {
   background-image: url(../images/contact.jpg);
-  display: block;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80%;
+}
+
+.contact {
+  display: block;
 }
 
 #form-group {
+  margin-top: 50px;
   max-width: 500px;
-  margin: auto;
-  padding: 50px;
+  margin:0 auto;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
   background-image: url(../images/wood3.jpg);
   color: lightgray;
-  position: absolute;
-  margin-top: 90px;
-  margin-left: 750px;
 }
 
-#title {
-  color: transparent;
-    background: linear-gradient(to left, #f77f03, #000000, #f77f03, #000000, #f77f03, #000000);
-  background-size: 1000px 100%;
-  animation: bg 40s linear infinite;
-  -webkit-background-clip: text;
-}
-
-@keyframes bg {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 10000px;
-  }
-}
 
 
 h1, h2, h3, h4, h5, h6, p {

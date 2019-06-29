@@ -7,7 +7,7 @@ require_once('Back-end/connexion.php'); ?>
   </head>
   <body>
     <header>
-        <?php include('Header.php'); //include('Back-end/form_contact.php');?>
+        <?php include('Header.php');?>
     </header>
     <main class="contact">
       <?php require_once('Back-end/form_contact.php'); ?>
@@ -30,4 +30,5 @@ require_once('Back-end/connexion.php'); ?>
           </form>
         </div>
     </main>
+    <script src="assets/js/script.js"></script>
 </html>
