@@ -19,7 +19,7 @@ USE portfolio_db;
 CREATE TABLE IF NOT EXISTS `admin` (
   id int NOT NULL AUTO_INCREMENT,
   name varchar(80) NOT NULL,
-  mdp varchar(255) NOT NULL,
+  mdp varchar(255) DEFAULT NULL,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB;
 
@@ -30,7 +30,8 @@ CREATE TABLE IF NOT EXISTS `admin` (
 CREATE TABLE IF NOT EXISTS `competence` (
   id_competence int NOT NULL AUTO_INCREMENT,
   nom_competence varchar(80) NOT NULL,
-  niveau varchar(50) NOT NULL,
+  niveau ENUM ('1','2','3','4','5'),
+  link_img text NOT NULL,
   PRIMARY KEY (id_competence)
 ) ENGINE=InnoDB;
 
@@ -42,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `experience` (
   id_experience int NOT NULL AUTO_INCREMENT,
   experience varchar(100) NOT NULL,
   description varchar(3000) NOT NULL,
+  lieu varchar(100) NOT NULL,
   date_Debut date NOT NULL,
   date_Fin date,
   PRIMARY KEY (id_experience)
@@ -58,11 +60,11 @@ CREATE TABLE IF NOT EXISTS `contact` (
   sujet varchar(80) NOT NULL,
   email varchar(100) NOT NULL,
   message varchar(800) NOT NULL,
-  file BLOB,
+  file_link text,
   PRIMARY KEY (id_contact)
 ) ENGINE=InnoDB;
 
 -- =================================================================
---   Ajout d'un premier utilisateur qui fera office d'administrateur
+--   Ajout d'un premier utilisateur test qui fera office d'administrateur
 -- =================================================================
-INSERT INTO admin(name, mdp) VALUES('boot','314e9ad1bb068ed152ce11d5afe810468471752f8b7bed2594ff3b5c5b471cd9')
+INSERT INTO admin(name, mdp) VALUES('boot','81d3c27cc312e95750e59e59e06785e0c0b849ff5a33b73b3a18921c5797ee66')

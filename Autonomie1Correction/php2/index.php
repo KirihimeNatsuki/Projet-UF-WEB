@@ -55,7 +55,7 @@
             </head>
             <body>
                 <text>mdrrr</text>
-    
+
 
 <?php
     //si aucun utilisateur n'est connecté, on affiche un formulaire de connexion
@@ -66,10 +66,10 @@
         echo $_SESSION['user_name'] ."est connecté";
 
     //sinon, on affiche ses compétence, et un formulaire de déconnexion
-    
+
     include('deco.php');
     include('competence.php');
     include('competence_form.php');
-    
+
     }
 ?>
