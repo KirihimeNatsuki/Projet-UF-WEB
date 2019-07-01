@@ -1,20 +1,36 @@
 html {
   margin:0;
   padding:0;
-  background: url(../images/wood3.jp) no-repeat center fixed;
-  background-size: cover; /* version standardisée */
 }
 header {
-  background: #aca6a6;
+  background: #212529;
   height: 60px;
 }
+
+#Scroll{
+  position:fixed;
+  bottom: 85px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #444;
+  font-family: sans-serif;
+  font-weight: bold;
+  color:#fff;
+  opacity:.9;
+  outline:none;
+  cursor:pointer;
+  z-index: 800;
+}
+#Scroll:hover {opacity: 1}
+
 .font-color {
-  background: #aca6a6;
+  background: #212529;
   height: 60px;
   width: -webkit-fill-available;
   position: absolute;
 }
-  
+
 #title {
   color: transparent;
   background: linear-gradient(to left, #f77f03, #000000, #f77f03, #000000, #f77f03, #000000);
@@ -50,7 +66,7 @@ header {
     overflow: hidden;
     position: relative;
     float:left;
-    background-color: #aca6a6;
+    background-color: #212529;
     -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
@@ -129,7 +145,7 @@ header {
   height: 60px;
   width: 60px;
   margin:0 auto;
-  background: #aca6a6;
+  background: #212529;
   position: absolute;
   cursor: pointer;
 }
@@ -167,13 +183,6 @@ header {
 #menu-burger span:nth-child(4) {
   top: 36px;
 }
-
-
-
-
-
-
-/* Animation Click */
 
 #menu-burger.active span:nth-child(1) {
   top: 28px;

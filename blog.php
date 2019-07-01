@@ -11,14 +11,10 @@ require_once('Back-end/bdd_connexion.php'); ?>
     </header>
     <main>
       <h1 align="center"><strong>Mon blog</strong></h1>
+      <button id="Scroll">UP</button>
     </main>
     <footer>
-      <div class="decouvrez">
-
-      </div>
-      <div class="reseaux">
-
-      </div>
+      <?php include('footer.php'); ?>
     </footer>
     <script src="assets/js/script.js"></script>
 </html>

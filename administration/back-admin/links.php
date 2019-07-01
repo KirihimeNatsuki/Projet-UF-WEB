@@ -1,4 +1,5 @@
-<?php require_once('add_autres.php');
+ <?php
+ require_once('add_autres.php');
  require_once('del_autres.php');
  require_once('modif_autres.php');
  require_once('add_competence.php');

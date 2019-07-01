@@ -8,7 +8,7 @@ if(isset($_SESSION['id'])){?>
 <html>
 <head>
   <?php require_once('head_administration.php'); ?>
-  <?php require_once('back-admin/bdd_connexion.php'); ?>
+  <?php require_once('../Back-end/bdd_connexion.php'); ?>
 </head>
 <body>
   <main>

@@ -4,6 +4,7 @@ require_once('Back-end/bdd_connexion.php'); ?>
 <html lang="fr" dir="ltr">
   <head>
     <?php require_once('Head.php'); ?>
+    <link rel="stylesheet" href="assets/css/contact.css">
   </head>
   <body>
     <header>
@@ -25,10 +26,13 @@ require_once('Back-end/bdd_connexion.php'); ?>
             <input id="sujet" type="text" name="sujet" class="form-control" required>
             <label for="message">Message</label>
             <textarea id="message" name="message" class="form-control" required></textarea><br>
-            <input type="file" class="form-control-file" id="file"><br>
             <button id="sub" class="btn btn-primary" type="submit" value="Submit" name="envoi_mess">Submit</button>
           </form>
         </div>
+        <button id="Scroll">UP</button>
     </main>
+    <footer>
+      <?php include('footer.php'); ?>
+    </footer>
     <script src="assets/js/script.js"></script>
 </html>

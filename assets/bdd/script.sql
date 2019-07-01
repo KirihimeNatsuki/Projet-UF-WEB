@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 CREATE TABLE IF NOT EXISTS `competence` (
   id_competence int NOT NULL AUTO_INCREMENT,
   nom_competence varchar(80) NOT NULL,
-  niveau ENUM ('1','2','3','4','5'),
+  niveau int(2),
   link_img text NOT NULL,
   PRIMARY KEY (id_competence)
 ) ENGINE=InnoDB;
