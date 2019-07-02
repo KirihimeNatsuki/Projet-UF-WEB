@@ -45,4 +45,5 @@
     </li>
  </ul>
 </div>
+</div>
 <p style="font-size: 14px;" id="copyright">© 2019 LEMARCHAND Enzo. All rights reserved.</p>

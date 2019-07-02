@@ -10,7 +10,7 @@ require_once('Back-end/bdd_connexion.php'); ?>
         <?php include('Header.php'); //include('Back-end/form_contact.php');?>
     </header>
     <main>
-      <br><br><br><br><br>
+      <br>
       <div class="explain">
         <h3 align="center"><strong>Pourquoi ce site web ?</strong></h3><br/>
         <p align="center" face="verdana"> Ce site présente ma propre personne, c'est à dire mon parcours, mes expériences, mes compétences, mon CV...<br/>

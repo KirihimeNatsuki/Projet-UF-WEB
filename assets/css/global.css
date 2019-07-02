@@ -7,6 +7,13 @@ header {
   height: 60px;
 }
 
+img[alt="www.000webhost.com"] {
+    display: none !important;
+}
+.explain{
+  margin:0 auto;
+  max-width: 600px;
+}
 #Scroll{
   position:fixed;
   bottom: 85px;
@@ -148,6 +155,7 @@ header {
   background: #212529;
   position: absolute;
   cursor: pointer;
+  z-index: 800;
 }
 
 /* Barres blanches */
