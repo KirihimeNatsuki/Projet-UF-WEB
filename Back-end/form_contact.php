@@ -11,20 +11,6 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
   $message = htmlspecialchars($_POST['message']);
 //On effectue plusieurs opérations pour vérifier que la taille de chaque donnée soit respectée
   if((strlen($nom) <= 60 && strlen($nom) >= 3) || (strlen($prenom) <= 40 && strlen($prenom)  >= 3) || (strlen($nom) == 0 && strlen($prenom) == 0))  {
-//On vérifie si la personne a entré son nom et son prénom (vérification de l'anonymat)
-    if (!isset($_POST["nom"]) || !isset($_POST["prenom"])) {
-      if ($_POST["nom"] == '' && $_POST["prenom"] == '') {
-        $_POST["nom"] = NULL;
-        $_POST["prenom"] = NULL;
-      }else{if(!isset($_POST["nom"]) && isset($_POST["prenom"])){
-        $nom = 'Anonyme';
-        }else{$prenom = 'Anonyme';}
-      if(!isset($_POST["nom"]) && !isset($_POST["prenom"])){
-        $nom = 'Anonyme';
-        $prenom = 'Anonyme';
-      }else{}
-      }
-    }else{$nom = htmlspecialchars($_POST["nom"]); $prenom = htmlspecialchars($_POST["prenom"]);}
     if(strlen($email) <= 100 && strlen($email) >= 8) {
       if(strlen($sujet) <= 80 && strlen($sujet) >= 3) {
         if(strlen($message) <= 800 && strlen($message) >= 12) {

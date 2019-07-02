@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `competence` (
   id_competence int NOT NULL AUTO_INCREMENT,
   nom_competence varchar(80) NOT NULL,
   niveau int(2),
-  link_img text NOT NULL,
+  link_img text DEFAULT NULL,
   PRIMARY KEY (id_competence)
 ) ENGINE=InnoDB;
 

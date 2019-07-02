@@ -1,13 +1,23 @@
 <?php
-if (isset($_POST['submitMd_COMP']))
-  var_dump($_FILES);
-  $name = basename($_FILES['img_Competence']['name']);
-  $chemin_file = '../../assets/uploaded_files/' . $name;
-  $chemin = 'uploaded_files/' . $name;
-  move_uploaded_file($_FILES['img_Competence']['tmp_name'], $chemin_file);
-  $nomComp = $_POST['nom_comp'];
-  $niv = $_POST['niveau'];
-  $rqt = $db->prepare("INSERT INTO competence (nom_competence, niveau, link_img) VALUES (?, ?, ?);");
-  $rqt->execute(array($nomComp,$niv,$chemin));
-
+  if (isset($_POST['submitMd_COMP'])) {
+     include '../../Back-end/bdd_connexion.php';
+        $new_id = $_POST['id_Mdcompetence'];
+        $new_name = $_POST['new_nom_competence'];
+        $niveau = $_POST['new_niveau'];
+        if (isset($_FILES)) {
+          var_dump($_FILES);
+          $name = basename($_FILES['new_img_Competence']['name']);
+          $chemin_file = '../../assets/uploaded_files/' . $name;
+          $chemin = 'assets/uploaded_files/' . $name;
+          if (move_uploaded_file($_FILES['new_img_Competence']['tmp_name'], $chemin_file)) {
+            $rqt = $bd->prepare("UPDATE competence SET nom_competence = :nom, niveau = :niveau, link_img = :link WHERE id_competence = :id");
+            $rqt->execute(array($id,$nom,$niveau,$chemin));
+            }
+          } else {
+            $rqt = $bd->prepare("UPDATE competence SET nom_competence = :nom, niveau = :niveau WHERE id_competence = :id");
+            $rqt->execute(array($id,$nom,$niveau));
+            }
+          header('Location: ../index.php');
+          exit();
+        }
 ?>
