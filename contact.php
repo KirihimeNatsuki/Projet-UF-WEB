@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php session_start();
 require_once('Back-end/bdd_connexion.php'); ?>
 <html lang="fr" dir="ltr">

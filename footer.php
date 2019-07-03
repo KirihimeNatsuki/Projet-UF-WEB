@@ -14,8 +14,8 @@
     <ul>
       <li class="has-subnav">Pages secondaires</li>
       <ul>
-        <li class="setup"><a href="competences.php" style="color: white;">Mes compétences</a></li>
-        <li class="setup"><a href="experiences.php" style="color: white;">Mes expériences</a></li>
+        <li class="setup"><a href="competence.php" style="color: white;">Mes compétences</a></li>
+        <li class="setup"><a href="experience.php" style="color: white;">Mes expériences</a></li>
       </ul>
     </ul>
   <div class="plan">

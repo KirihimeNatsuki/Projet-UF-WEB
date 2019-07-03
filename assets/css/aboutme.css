@@ -1,0 +1,22 @@
+body {
+  background-image: url(../images/chess.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  text-align: center;
+  color: white;
+}
+
+.presentation{
+  margin:0 auto;
+  max-width: 600px;
+  text-align: center;
+  color: white;
+}
+
+#moi{
+  margin-left: 700px;
+  margin-top: -300;
+}

@@ -1,0 +1,52 @@
+body {
+  background-image: url(../images/chess2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button_me{
+  margin:0 auto;
+  max-width: 300px;
+}
+
+/*fond{position:absolute;padding-top:85px;top:0;left:0; right:0;bottom:0;
+  background-color:#e0f2f1;}*/
+
+.card
+{
+  background-color:#ffffff;
+  margin:0 auto;
+  width: 250px;
+  height:200px;
+  position: relative;
+  box-shadow:1px 1px 5px #333333;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.pics_card
+{
+  display:block;
+  background-size: cover;
+  height: 130px;
+  position: relative;
+}
+
+.txt_description_card
+{
+  padding: 5px;
+  font-size:17px;
+  color:#999999;
+  font-weight: 400;
+}
+
+.txt_titre_card
+{
+  position:absolute;
+  bottom:5px;
+  left:5px;
+  font-size:22px;
+  color: black;
+  font-weight: 300;
+  text-align:left;
+}
